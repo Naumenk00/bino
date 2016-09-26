@@ -84,9 +84,13 @@ gulp.task('server', function() {
 /******************************
  * sass + prep task
  ******************************/
+var sass_paths = [
+    'src/sass/*.scss',
+    'src/components/**/.scss'
 
+];
 gulp.task('sass', function () {
-    return gulp.src('src/sass/*.scss')
+    return gulp.src(sass_paths)
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],

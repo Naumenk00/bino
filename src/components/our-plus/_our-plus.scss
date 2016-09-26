@@ -1,0 +1,30 @@
+.our-plus{
+  &__title{
+    color: #6a6a6a;
+    font-family: $OpenSans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 41px;
+      height: 1px;
+      background-color: #6a6a6a;
+      transform: translateX(-50%);
+      bottom: -15px;
+      left: 50%;
+    }
+  }
+  &__text{
+    color: #999;
+    font-family: SourceSansPro,sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+  }
+}

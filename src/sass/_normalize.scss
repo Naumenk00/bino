@@ -473,3 +473,22 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+.clearfix {
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+  }
+}
+
+.clearfix  {
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix{
+  zoom: 1;
+}
